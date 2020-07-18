@@ -1,0 +1,21 @@
+{
+  "name": "lr1-parser",
+  "version": "1.0.0",
+  "description": "An lr1 gramma parser with simple lex and yacc",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "test": "ts-node test/boolean_expression",
+    "postinstall": "npm run build"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^14.0.26",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "ts-node": "^8.10.2"
+  }
+}
